@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>blockchain system</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">blockchain system</h1>
+
+
+            <form onSubmit="App.sendTransaction();">
+              <div class="form-group">
+                <label for="fromAccount">Enter the sender's transfer address</label>
+                <input type="text" class="form-control" id="fromAccount" placeholder="Enter accountAddress">
+                <label for="toAccount">Enter transfer acceptance address</label>
+                <input type="text" class="form-control" id="toAccount" placeholder="Enter accountAddress">
+                <label for="amount">Enter transfer amount</label>
+                <input type="text" class="form-control" id="amount" placeholder="Enter amount">
+              </div>
+              <button type="submit" class="btn btn-primary">Transfer pay it</button>
+              <hr />
+            </form>
+            <p id="accountAddress" class="text-center"></p>
+            <p id="accBalance" class="text-center"></p>
+
+
+<!--             
+            <form onSubmit="App.getBalance();">
+              <div class="form-group">
+                <label for="addB">输入地址</label>
+                <input type="text" class="form-control" id="addB" placeholder="Enter addB">
+              </div>
+              <button type="submit" class="btn btn-primary">查询</button>
+              <hr />
+            </form>
+          -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

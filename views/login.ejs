@@ -1,0 +1,30 @@
+<%- include header %>
+<div class="container">
+    <form class="col-sm-offset-4 col-sm-4 form-horizontal" role="form" method="post">
+        <fieldset>
+        <% if(locals.islogin) { %>
+           user：<h3> <%= test %></h3>already login。<br>
+           <a class="btn" href="/logout">log out</a>
+            <% } else{ %>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="username">username</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="password">password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">login</button>
+                </div>
+            </div>
+            <% } %>
+        </fieldset>
+    </form>
+</div>
+<%- include footer %>

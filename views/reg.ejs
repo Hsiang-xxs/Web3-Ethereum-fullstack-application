@@ -1,0 +1,32 @@
+<%- include header %>
+<div class="container">
+    <form class=" col-sm-offset-4 col-sm-4 form-horizontal" role="form" method="post">
+        <fieldset>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="username">username</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="username" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="password2">password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password2" name="password2" placeholder="password" required>
+                </div>
+            </div>
+			 <div class="form-group">
+                <label class="col-sm-3 control-label" for="chainadd">chainadd</label>
+                <div class="col-sm-9">
+                    <input type="chainadd" class="form-control" id="chainadd" name="chainadd" placeholder="chainaddress" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button type="submit" class="btn btn-primary">register</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<%- include footer %>

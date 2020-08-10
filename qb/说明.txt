@@ -1,0 +1,7 @@
+node version: 10.16.0, npm version: 6.9.0
+solidity version 0.5.12
+
+操作步骤
+
+truffle migrate --reset
+npm run dev 
