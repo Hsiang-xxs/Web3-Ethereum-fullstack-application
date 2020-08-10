@@ -14,7 +14,6 @@ In this test task you are expected to create a fullstack application that authen
 
 The system should look like:
 ![system](./system.jpg)
-[system]
 
 ## Technical Requirements
 
