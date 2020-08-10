@@ -8,11 +8,12 @@
 
 Web3 is the entrance for users entering the magic of Ethereum network. Web3Modal is a ReactJS component that simplifies the integration of web3 experience. It supports multiple popular web3 providers.
 
-In this test task you are expected to create a fullstack application that authenticates the user through web3 (using Web3Modal). The authentication should be performed through the web3.eth.sign with a timestamp included in the signing message, while the backendshould use the fromRpcSig and ecrecover from ethereumjs-utils to validate the message then authenticate the user.
+In this test task you are expected to create a fullstack application that authenticates the user through web3 (using Web3Modal). The authentication should be performed through the web3.eth.sign with a timestamp included in the signing message, while the backend should use the fromRpcSig and ecrecover from ethereumjs-utils to validate the message then authenticate the user.
 
 ## System View
 
 The system should look like:
+
 ![system](./system.jpg)
 
 ## Technical Requirements
